@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir_Klinik</title>
+</head>
+<body>
+    
+<style>
+    body {
+        background-image: url("https://img.freepik.com/premium-photo/blur-short-white-hospital-walkway-background_7180-2422.jpg?w=2000");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        height: auto;
+}
+</style>
+
+<form action="action_page.php" style="color: rgb(6, 6, 6);">
+    <h2>Pendaftaran Pasien Klinik Sehat Sentosa :</h2>
+    <table>
+        <tr>
+            <td><label for="nama">Nama Lengkap</label></td>
+            <td>:</td>
+            <td><input type="text" name="nama" id="nama"></td>
+        </tr>
+        <tr>
+            <td><label for="NIK">Nomor Induk Kependudukan</label></td>
+            <td>:</td>
+            <td><input type="text" name="NIK" id="NIK"></td>
+        </tr>
+        <tr>
+            <td><label for="lahir">Berat Badan</label></td>
+            <td>:</td>
+            <td><input type="text" name="Berat badan"></td>
+        </tr>
+        <tr>
+            <td><label for="date">Tanggal Lahir</label></td>
+            <td>:</td>
+            <td><input type="date" name="date" id="date"></td>
+        </tr>
+        <tr><td><label for="kota">Asal Kabupaten/Kota</label></td>
+            <td>:</td>
+            <td>
+                <select id="kota">
+                    <option value="Bengkayang">jiwan</option>
+                    <option value="Kayong Utara">sawahan</option>
+                    <option value="Ketapang">Klumpit</option>
+                    <option value="Kubu Raya">Balerejo</option>
+                    <option value="Landak">Bagi</option>
+                    <option value="MElawi">Kwadungan</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="hp">Nomor Telepon</label></td>
+            <td>:</td>
+            <td><input type="tel" name="hp" id="hp" value="+62"></td>
+        </tr>
+        <tr>
+            <td><label for="email">Alamat Email</label></td>
+            <td>:</td>
+            <td><input type="email" name="email" id="email"></td>
+        </tr>
+        
+        <tr>
+            <td>Gejala Yang Diderita Pasien</td>
+            <td>:</td>
+            <td><textarea style="width: 250; height: 100;"></textarea></td>
+        </tr>
+     
+        <tr>
+            <td>
+                <br>
+                <button type="submit" onclick="alert('Terima kasih sudah mendaftar pelatihan ini.')">Kirim</button>
+                <input type="reset">
+            </td>
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>
